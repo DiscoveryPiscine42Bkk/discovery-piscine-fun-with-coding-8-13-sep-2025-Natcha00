@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SNCF Sandwich – Drop-down Menu (No JS)</title>
+  <link rel="stylesheet" href="menu.css" />
+</head>
+
+<body>
+  <div class="tile-bg" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="sncf-badge" aria-hidden="true">SNCF</span>
+      <h1 class="title">Ham &amp; Cheese “Drop-down”</h1>
+    </div>
+    <p class="subtitle">Pure <strong>HTML + CSS</strong>. No JavaScript. Bon appétit!</p>
+  </header>
+
+  <nav class="sandwich" aria-label="SNCF sandwich drop-down menu">
+    <div class="bread top" aria-hidden="true"></div>
+
+    <ul class="controls" role="menubar">
+      <li class="dropdown" role="none">
+        <input type="checkbox" id="fillings" class="toggle" aria-hidden="true" />
+        <label class="toggle-label" for="fillings" role="menuitem" aria-haspopup="true" aria-controls="menu-fillings"
+          aria-expanded="false">
+          🥪 Fillings
+        </label>
+        <ul id="menu-fillings" class="menu-list" role="menu" aria-label="Choose your fillings">
+          <li role="none"><a role="menuitem" href="#">Paris Ham (Jambon de Paris)</a></li>
+          <li role="none"><a role="menuitem" href="#">Comté Cheese</a></li>
+          <li role="none"><a role="menuitem" href="#">Emmental</a></li>
+          <li role="none"><a role="menuitem" href="#">Cornichons</a></li>
+          <li role="none"><a role="menuitem" href="#">Butter &amp; Dijon</a></li>
+        </ul>
+      </li>
+
+
+      <li class="dropdown" role="none">
+        <input type="checkbox" id="bread" class="toggle" aria-hidden="true" />
+        <label class="toggle-label" for="bread" role="menuitem" aria-haspopup="true" aria-controls="menu-bread"
+          aria-expanded="false">
+          🥖 Bread
+        </label>
+        <ul id="menu-bread" class="menu-list" role="menu" aria-label="Choose your bread">
+          <li role="none"><a role="menuitem" href="#">Baguette Tradition</a></li>
+          <li role="none"><a role="menuitem" href="#">Sesame Baguette</a></li>
+          <li role="none"><a role="menuitem" href="#">Cereal Baguette</a></li>
+        </ul>
+      </li>
+
+
+      <li class="dropdown" role="none">
+        <input type="checkbox" id="extras" class="toggle" aria-hidden="true" />
+        <label class="toggle-label" for="extras" role="menuitem" aria-haspopup="true" aria-controls="menu-extras"
+          aria-expanded="false">
+          🧂 Extras
+        </label>
+        <ul id="menu-extras" class="menu-list" role="menu" aria-label="Add extras">
+          <li role="none"><a role="menuitem" href="#">Arugula</a></li>
+          <li role="none"><a role="menuitem" href="#">Tomato</a></li>
+          <li role="none"><a role="menuitem" href="#">Onion</a></li>
+          <li role="none"><a role="menuitem" href="#">Olives</a></li>
+        </ul>
+      </li>
+    </ul>
+
+
+    <div class="layer cheese" aria-hidden="true"></div>
+    <div class="layer ham" aria-hidden="true"></div>
+    <div class="layer lettuce" aria-hidden="true"></div>
+
+
+    <div class="bread bottom" aria-hidden="true"></div>
+
+
+    <p class="hint">
+      Tip: Tab to a menu label and press <kbd>Space</kbd>/<kbd>Enter</kbd> to open.
+      Click/tap again to close.
+    </p>
+  </nav>
+
+  <footer class="foot">
+    <small>
+      Challenge notes: Trains meet at the same point &rarr; equal distance from Paris.
+      Built with semantic HTML, ARIA roles, and CSS only.
+    </small>
+  </footer>
+</body>
+
+</html>
